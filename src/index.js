@@ -8,13 +8,14 @@ function component() {
     const element = document.createElement('div');
 
     // Lodash, currently included via a script, is required for this line to work
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+    element.innerHTML = _.join(['Hello', 'webpack', "yyyy"], ' ');
 
     element.classList.add('hello');
 
     // add iamge
     let myicon = new Image()
     myicon.src = Icon
+    myicon.width= 100
     element.appendChild(myicon)
 
     // print data
